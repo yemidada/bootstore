@@ -27,7 +27,7 @@
 
 # 📖 Bookstore: initialize project with components <a name="about-project"></a>
 
-**This is  bootstore application built in HTML, CSS, React. It ia a Single Page App (SPA) that that allows users to book and categories them according**
+**This is  bootstore application built in HTML, CSS, React. It ia a Single Page App (SPA) that allows users to store books and categories them according**
 
 
 

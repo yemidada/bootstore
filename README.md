@@ -13,7 +13,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Usage](#usage)
@@ -60,10 +59,6 @@ The various stacks used for the project includes the following
 - **Configurated react linters**
 
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](https://math-magicians-sngg.onrender.com)
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -106,10 +101,10 @@ Clone this repository to your desired folder:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/yemidada/math-magicians.git
+$ git clone https://github.com/yemidada/bootstore.git
 
 # Go into the repository
-$ cd math-magicians
+$ cd bootstore
 
 # Install dependencies
 $ npm install
@@ -142,8 +137,7 @@ After you clone this repo to your desktop and install the dependencies, go to it
 
 
 - [ ] **Improve the designs**
-- [ ] **Add Math computational functions**
-- [ ] **Pick quote from different topic**
+- [ ] **Add more features**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

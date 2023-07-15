@@ -8,7 +8,7 @@ const BookForm = () => {
 
       <div className="form">
         <input placeholder="Book title" />
-        <input placeholder="Category" />
+        <input placeholder="Author" />
         <select>
           {
             selectors.map((selector) => <option key={selector} value={selector}>{selector}</option>)

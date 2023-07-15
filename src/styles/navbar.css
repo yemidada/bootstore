@@ -1,0 +1,58 @@
+@import url(./variable.css);
+
+.navbar-brand {
+  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
+  background-color: #fff;
+  border: solid 1px var(--white-three);
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin: 0.375rem 2.938rem 0.125rem 0;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--azure);
+}
+
+.my-account {
+  width: 2.813rem;
+  height: 2.813rem;
+  border-radius: 50%;
+  border: solid 1px var(--white-three);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--azure);
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+}
+
+.nav-links li {
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: var(--black-two);
+  margin-right: 2.563rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+}
+
+.nav-links li .inactive {
+  opacity: 0.5;
+}

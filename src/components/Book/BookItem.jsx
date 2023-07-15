@@ -1,8 +1,6 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import { CircularProgressbar } from 'react-circular-progressbar';
-import 'react-circular-progressbar/dist/styles.css';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import 'react-circular-progressbar/dist/styles';
 
 const BookItem = (props) => {
   const { book } = props;
@@ -13,9 +11,9 @@ const BookItem = (props) => {
         <div className="title">{book.title}</div>
         <div className="author">{book.author}</div>
         <ul className="actions">
-          <li><Link to="/">Comments</Link></li>
-          <li><Link to="/">Remove</Link></li>
-          <li><Link to="/">Edit</Link></li>
+          <li><button type="button">Comments</button></li>
+          <li><button type="button">Remove</button></li>
+          <li><button type="button">Edit</button></li>
         </ul>
       </div>
 

@@ -1,13 +1,14 @@
 import '../../styles/form.css';
 
 const BookForm = () => {
-  const selectors = ['Suzanne Collins', 'Frank Herbert', 'Suzanne Collins'];
+  const selectors = ['Action', 'Science Fiction', 'Economy'];
   return (
     <div className="bookform">
       <div className="title">ADD NEW FORM</div>
 
       <div className="form">
         <input placeholder="Book title" />
+        <input placeholder="Category" />
         <select>
           {
             selectors.map((selector) => <option key={selector} value={selector}>{selector}</option>)

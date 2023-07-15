@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom';
 import '../../styles/navbar.css';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import PersonIcon from '@mui/icons-material/Person';
 
 const NavBar = () => (

@@ -55,7 +55,7 @@
   border-right: solid 1px var(--white-three);
 }
 
-.book-item .actions li a {
+.book-item .actions li button {
   display: block;
   font-size: 0.875rem;
   padding: 0 12px 3px 12px;
@@ -63,6 +63,8 @@
   font-weight: 300;
   color: #4386bf;
   text-decoration: none;
+  background: transparent;
+  border: none;
 }
 
 .book-item .actions li:last-child {

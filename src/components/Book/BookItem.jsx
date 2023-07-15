@@ -1,6 +1,6 @@
 import { CircularProgressbar } from 'react-circular-progressbar';
 import PropTypes from 'prop-types';
-import 'react-circular-progressbar/dist/styles';
+import 'react-circular-progressbar/dist/styles.css';
 
 const BookItem = (props) => {
   const { book } = props;

@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <h3><b>Bookstore: initialize project with components</b></h3>
+  <h3><b>Bookstore: add reducers and actions</b></h3>
 
 </div>
 
@@ -25,7 +25,7 @@
 - [📝 License](#license)
 
 
-# 📖 Bookstore: initialize project with components <a name="about-project"></a>
+# 📖 Bookstore: add reducers and actions <a name="about-project"></a>
 
 **This is  bootstore application built in HTML, CSS, React. It ia a Single Page App (SPA) that allows users to store books and categories them according**
 
@@ -57,7 +57,8 @@ The various stacks used for the project includes the following
 
 - **Set up a React app.**
 - **Configurated react linters**
-
+- **Setup a Redux store**
+- **Create a slice to save your state and reducers**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

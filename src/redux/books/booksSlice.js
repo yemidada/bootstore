@@ -11,9 +11,7 @@ export const booksSlice = createSlice({
       state.books.push(action.payload);
     },
     remove: (state, action) => {
-      if (action.payload > -1) {
-        state.books.splice(action.payload, 1);
-      }
+      state.books = state.books.filter((book) => book.id !== action.payload);
     },
   },
 });

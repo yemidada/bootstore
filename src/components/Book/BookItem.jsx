@@ -2,14 +2,14 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 import PropTypes from 'prop-types';
 import 'react-circular-progressbar/dist/styles.css';
 import { useDispatch } from 'react-redux';
-import { remove } from '../../redux/books/booksSlice';
+import { removeBook } from '../../redux/books/booksSlice';
 
 const BookItem = (props) => {
-  const { book } = props;
+  const { book, itemId } = props;
   const dispatch = useDispatch();
 
   const onRemove = () => {
-    dispatch(remove(book));
+    dispatch(removeBook(itemId));
   };
 
   return (
@@ -53,10 +53,12 @@ const BookItem = (props) => {
 
 BookItem.defaultProps = {
   book: PropTypes.shape(),
+  itemId: PropTypes.string,
 };
 
 BookItem.propTypes = {
   book: PropTypes.shape(),
+  itemId: PropTypes.string,
 };
 
 export default BookItem;

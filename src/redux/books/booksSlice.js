@@ -1,39 +1,60 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
+import { baseURL, appId } from '../../utils/constants';
+
+export const getBooks = createAsyncThunk(
+  'books/getBooks',
+  async () => {
+    const response = await axios.get(`${baseURL}/${appId}/books`);
+    return response.data;
+  },
+);
+
+export const addBook = createAsyncThunk(
+  'books/addBook',
+  async (params, { dispatch }) => {
+    const response = await axios.post(
+      `${baseURL}/${appId}/books`, params,
+    );
+    dispatch(getBooks());
+    return response.data;
+  },
+);
+
+export const removeBook = createAsyncThunk(
+  'books/removeBook',
+  async (params, { dispatch }) => {
+    const response = await axios.delete(
+      `${baseURL}/${appId}/books/${params}`,
+    );
+    dispatch(getBooks());
+    return response.data;
+  },
+);
 
 export const booksSlice = createSlice({
   name: 'books',
   initialState: {
-    books: [
-      {
-        item_id: 'item1',
-        title: 'The Great Gatsby',
-        author: 'John Smith',
-        category: 'Fiction',
-      },
-      {
-        item_id: 'item2',
-        title: 'Anna Karenina',
-        author: 'Leo Tolstoy',
-        category: 'Fiction',
-      },
-      {
-        item_id: 'item3',
-        title: 'The Selfish Gene',
-        author: 'Richard Dawkins',
-        category: 'Nonfiction',
-      },
-    ],
+    books: [],
+    loading: false,
   },
   reducers: {
-    add: (state, action) => {
-      state.books.push(action.payload);
-    },
-    remove: (state, action) => {
-      state.books = state.books.filter((book) => book.item_id !== action.payload.item_id);
-    },
-  },
-});
 
-export const { add, remove } = booksSlice.actions;
+  },
+  extraReducers: (builder) => {
+    builder
+      .addCase(getBooks.pending, (state) => {
+        state.loading = true;
+      })
+      .addCase(getBooks.fulfilled, (state, { payload }) => {
+        state.loading = false;
+        state.books = payload;
+      })
+      .addCase(getBooks.rejected, (state) => {
+        state.loading = false;
+      });
+  },
+
+});
 
 export default booksSlice.reducer;

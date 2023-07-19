@@ -2,7 +2,7 @@ import '../../styles/form.css';
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import { add } from '../../redux/books/booksSlice';
+import { addBook } from '../../redux/books/booksSlice';
 
 const BookForm = () => {
   const selectors = ['', 'Action', 'Science Fiction', 'Economy'];
@@ -14,14 +14,11 @@ const BookForm = () => {
 
   const onSubmit = (event) => {
     event.preventDefault();
-    dispatch(add({
+    dispatch(addBook({
       item_id: uuidv4(),
       category,
       title,
       author,
-      progress: 64,
-      current_chapter: 'Chapter 17',
-      status: 'Completed',
     }));
   };
 

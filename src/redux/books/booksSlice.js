@@ -48,7 +48,6 @@ export const booksSlice = createSlice({
       })
       .addCase(getBooks.fulfilled, (state, { payload }) => {
         state.loading = false;
-        // Iterate through the object
         state.books = payload;
       })
       .addCase(getBooks.rejected, (state) => {

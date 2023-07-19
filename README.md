@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <h3><b>Bookstore: connect to API</b></h3>
+  <h3><b>Bookstore: styling</b></h3>
 
 </div>
 
@@ -25,7 +25,7 @@
 - [📝 License](#license)
 
 
-# 📖 Bookstore: connect to API <a name="about-project"></a>
+# 📖 Bookstore: styling <a name="about-project"></a>
 
 **This is  bootstore application built in HTML, CSS, React. It ia a Single Page App (SPA) that allows users to store books and categories them according**
 

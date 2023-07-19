@@ -20,6 +20,9 @@ const BookForm = () => {
       title,
       author,
     }));
+    setTitle('');
+    setAuthor('');
+    setCategory('');
   };
 
   return (
